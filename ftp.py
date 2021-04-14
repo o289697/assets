@@ -6,10 +6,10 @@ from pyftpdlib.servers import FTPServer
 authorizer = DummyAuthorizer()
  
 #添加用户权限和路径，括号内的参数是(用户名， 密码， 用户目录， 权限)
-authorizer.add_user('user', '12345', '/home/o289697_gmail_com/ftp/', perm='elradfmw')
+authorizer.add_user('user', '12345', '/root/', perm='elradfmw')
  
 #添加匿名用户 只需要路径
-authorizer.add_anonymous('/home/o289697_gmail_com/ftp')
+authorizer.add_anonymous('/root')
  
 #初始化ftp句柄
 handler = FTPHandler
